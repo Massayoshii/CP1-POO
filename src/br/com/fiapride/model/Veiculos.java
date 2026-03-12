@@ -26,12 +26,25 @@ public class Veiculos {
     }
 
     public void setGas(int gas) {
-        this.gas = gas;
+        if(gas >= 0){
+            this.gas = gas;
+        }else{
+            System.out.println("Erro no sistema:Tentativa de definir gas negativo bloqueada!");
+        }
     }
-    public void adicionar(int valor){
-        gas = gas + valor;
+    public void adicionarGasolina(int valor){
+        if(valor >= 0){
+            gas = gas + valor;
+        }else{
+            System.out.println("Erro no sistema,coloque um valor positivo");
+        }
     }
-    public void gasta(int valor){
-        gas = gas - valor;
+    public void gastarGasolina(int valor){
+        if(valor >= 0){
+            gas = gas - valor;
+        }else {
+            System.out.println("Erro no sistema,coloque um valor positivo");
+        }
+
     }
 }
