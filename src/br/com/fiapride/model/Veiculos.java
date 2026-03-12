@@ -1,6 +1,6 @@
 package br.com.fiapride.model;
 
-public class veiculos {
+public class Veiculos {
     private String individuo;
     private String placa;
     private int gas;
