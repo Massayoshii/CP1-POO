@@ -9,6 +9,8 @@ public class principal {
         veiculos1.setPlaca("ABC-1234");
         veiculos1.adicionar(50);
         veiculos1.gasta(100);
-        System.out.println("Dono: "+ veiculos1.getIndividuo()+"| Placa: "+ veiculos1.getPlaca()+"| Gas olina: "+ veiculos1.getGas());
+        System.out.println("Dono: "+ veiculos1.getIndividuo());
+        System.out.println("Placa: "+ veiculos1.getPlaca());
+        System.out.println("Gasolina: "+ veiculos1.getGas());
     }
 }
