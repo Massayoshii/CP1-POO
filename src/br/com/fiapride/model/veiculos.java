@@ -2,7 +2,7 @@ package br.com.fiapride.model;
 
 public class veiculos {
     private String individuo;
-    private String pl;
+    private String placa;
     private int gas;
 
     public String getIndividuo() {
@@ -13,12 +13,12 @@ public class veiculos {
         this.individuo = individuo;
     }
 
-    public String getPl() {
-        return pl;
+    public String getPlaca() {
+        return placa;
     }
 
-    public void setPl(String pl) {
-        this.pl = pl;
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
 
     public int getGas() {
@@ -28,10 +28,10 @@ public class veiculos {
     public void setGas(int gas) {
         this.gas = gas;
     }
-    public void adicionar(int v){
-        gas = gas + v;
+    public void adicionar(int valor){
+        gas = gas + valor;
     }
-    public void gasta(int v){
-        gas = gas - v;
+    public void gasta(int valor){
+        gas = gas - valor;
     }
 }
